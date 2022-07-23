@@ -1,0 +1,19 @@
+.box {
+    border-radius: 20px;
+}
+
+.text {
+    font-family: 'Poppins', sans-serif;
+    color: black !important;
+
+}
+
+.text2 {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.img1 {
+    border-radius: 15px;
+    width: 100%;
+}

@@ -1,0 +1,20 @@
+.back {
+    background-color: #000000;
+    background-size: cover;
+    height: 100%;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text123 {
+    color: white !important;
+}
+
+.b1 {
+    border-radius: 15px !important;
+    margin-left: auto;
+}
+
+.b2 {
+    margin-left: auto;
+}
