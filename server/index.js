@@ -5,6 +5,7 @@ const multer = require('multer');
 const app  = express();
 const authRoutes = require('./routes/authRoutes')
 const userRoutes = require('./routes/userRoutes')
+const postRoutes = require('./routes/postRoutes')
 //middlewares
 app.use(express.json())
 //uploading files
@@ -29,7 +30,7 @@ app.get('/',(req,res)=>{
 //Routes
 app.use("/auth",authRoutes);
 app.use("/users",userRoutes);
-//app.use("/posts",postRoutes);
+app.use("/posts",postRoutes);
 mongoose.connect(process.env.MONGO_URI,()=>{
     app.listen(process.env.PORT,()=>{
         console.log('running at 6000!');

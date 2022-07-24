@@ -1,11 +1,20 @@
 import Home from './pages/home'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Login from './pages/login';
+import Register from './pages/register';
+import Profile from './pages/profile';
 const App = ()=>{
   return(
-    <>
-      <Home/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/:id' element={<Home/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/register' element={<Register/>}/>
+        <Route path="/profile" element={<Profile/>}/>
+      </Routes>
+    </BrowserRouter>
+
   )
 }
 export default App;
