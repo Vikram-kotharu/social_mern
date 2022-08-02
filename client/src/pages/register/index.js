@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './index.css'
 import axios from 'axios'
-import {useNavigate} from 'react-router-dom'
+import {useNavigate,Link} from 'react-router-dom'
 const Register = ()=>{
     const [username,setUser] = useState('');
     const [email,setEmails] = useState('');
@@ -53,7 +53,7 @@ const Register = ()=>{
                     <button type="submit" className="btn btn-primary">Submit</button>
                 </form>
                 <br />
-                <p>Already a user go to <a href="/#">Login</a></p>
+                <p>Already a user go to <Link to='/login'>Login</Link> </p>
             </div>
         </div>
     </div>

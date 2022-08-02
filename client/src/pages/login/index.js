@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate,Link } from 'react-router-dom'
 import './index.css'
 import axios from 'axios'
 const Login = ()=>{
@@ -46,7 +46,7 @@ const Login = ()=>{
                     <button type="submit" className="btn btn-primary">Submit</button>
                 </form>
                 <br />
-                <p>New to Socializer? <a href="/#">Register</a></p>
+                <p>New to Socializer? <Link to="/register">Register here!</Link></p>
             </div>
         </div>
     </div>

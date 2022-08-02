@@ -10,6 +10,7 @@ const Posts = () =>{
         <div className="container-fluid">
         <div className='row'>
         <div className="col-lg-5 shadow box">
+            
             <div className="d-flex flex-row p-3 text">
                 <img  height='30px' src='https://cdn-icons-png.flaticon.com/512/64/64572.png' alt="profile pic"/>
                 <h3 className="text2 ml-2">Vikramaditya</h3>
